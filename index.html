@@ -174,29 +174,32 @@
         }
 
         footer {
-            background-color: rgb(7, 7, 65);
-            height: 350px;
-
+            background-color: rgb(4, 4, 39);
 
         }
 
         .footer {
             display: flex;
-            padding: 23px 120px;
-            justify-content: space-between;
-            width: auto;
-
-
-
+            padding: 15px 120px;
+            justify-content: space-evenly;
         }
 
         footer ul {
             list-style: none;
-            font-size: 21px;
+            font-size: 19px;
+
         }
 
         .footer>div {
             width: 223px;
+            color: rgb(173, 238, 238);
+
+        }
+
+        .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
         }
     </style>
 </head>
@@ -207,8 +210,8 @@
             <div class="left">Port<span class="yellow">folio</div>
             <div class="right">
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/">About </a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About </a></li>
                     <li><a href="/">Skills</a></li>
                     <li><a href="/">Contact Me </a></li>
 
@@ -217,7 +220,7 @@
         </nav>
     </header>
     <main>
-        <section class="firstSection">
+        <section class="firstSection" id="home">
             <div class="leftSection">Hi, My Name is <span class="purple">Nishi Singh</span>
 
                 <div>And I am a Data Scientist and a</div>
@@ -249,7 +252,7 @@
         </section>
         <hr>
 
-        <section class="secondSection">
+        <section class="secondSection" id="about">
 
             <h1>What I have done so far </h1>
 
@@ -309,34 +312,38 @@
         </section>
     </main>
     <footer>
-        <div class="flex"></div>
+        <div class="footer">
             <div class="footer-first">
-                <h3>About Me</h3>
-               
-                 <ul><p> As a data science student, I am passionate about unraveling insights from complex datasets using
+                <h1>About Me</h1>
+                <p>As a data science student, I am passionate about unraveling insights from complex datasets using
                     statistical analysis and machine learning. Eager to apply my skills in data exploration, analysis,
                     and visualization to address real-world challenges and contribute to the evolving field of data
-                    science.</p></ul>
-               
-            
+                    science.
+
+                </p>
             </div>
             <div class="footer-second">
-         <ul>
-                <li>Contact : </li>
-                <li>Email :</li>
-         </ul>
+                <ul>
+                    <li>Contact :</li>
+                    <li>Email :</li>
+                    <li>Address :</li>
+                </ul>
             </div>
-          
-            <div class="thrid">
-                <li>8200794570</li>
-                <li>nishi27995@gmail</li>
-
-           </div>
-           <div class="fourth">
-
-           </div>
+            <div class="footer-third">
+                <ul>
+                    <li>82007945</li>
+                    <li>nishi27995@gmail.com</li>
+                    <li>8 Shai Shraddha Duplex, B/h Hallmark, Ajwa Road,Vadodara</li>
+                </ul>
+            </div>
+        </div>   
+        <div class="footer-rights">
+            Copy &#169;nishisinghporfoli.com| All Rights reserved
         </div>
+    
     </footer>
+
+
     <script src=" https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <!-- Setup and start animation! -->
     <script>
